@@ -7,29 +7,41 @@ Follow the steps shown in the link https://cloud.ibm.com/docs/assistant?topic=as
 ## code:
 
 <script> 
+  
 
   window.watsonAssistantChatOptions = {
+
   
     integrationID: "a5c2241e-2ecc-4bdf-9396-bcb32b842c71", // The ID of this integration.
-    
+  
+  
     region: "eu-gb", // The region your integration is hosted in.
-    
+  
+  
     serviceInstanceID: "6b1d0819-4ee1-4a4a-a183-cefffcfd9adc", // The ID of your service instance.
-    
+  
+  
     onLoad: function(instance) { instance.render(); }
+  
+  
   };
   
   
   setTimeout(function(){
   
+  
   const t=document.createElement('script');
   
+  
   t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-   
+  
+  
    document.head.appendChild(t);
+  
   
   });
 
+  
 </script>
 
 ## Result:
